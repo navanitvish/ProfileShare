@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(36, 35, 35);
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+.circle1 {
+    position: relative;
+    margin-top: 40px;
+    left: 200px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(221, 68, 68);
+    border-radius: 50%;
+    box-shadow: 0 0 40px #f00;
+    animation: move 2s linear infinite;
+    z-index: -1;
+}
+
+.circle2 {
+    position: absolute;
+    bottom: 50px;
+    right: 500px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 47, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 80px rgb(151, 4, 200);
+    animation: move 3s linear infinite;
+    animation-delay: 1s;
+    background-color: rgb(187, 37, 237);
+    z-index: -1;
+
+}
+
+
+
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-wrapper {
+    position: absolute;
+    top: 0;
+    background-color: rgb(72, 76, 76);
+    opacity: 0.8;
+    width: 280px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(150, 155, 155);
+    border-radius: 4px;
+
+
+
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.modal {
+    background-color: rgb(72, 76, 76);
+    width: 280px;
+    height: 150px;
+}
